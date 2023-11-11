@@ -24,6 +24,6 @@ urlpatterns = [
     path('__debug__/',include('debug_toolbar.urls')),
     # path('', include('django.contrib.auth.urls')),
     path('registration/', CustomerRegistrationView.as_view(), name='registration'),
-    path('', include('restaurant.urls')),
+    path('restaurant/', include('restaurant.urls')),
 ]
 
