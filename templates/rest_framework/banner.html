@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block breadcrumb %}
+    <div style="background-color: #f8f8f8; padding: 10px;">
+        <strong>API Endpoints:</strong>
+        <a href="{% url 'orders' %}orders/">Orders</a> |
+        <a href="{% url 'carts' %}carts/">Cart</a> |
+        <a href="{% url 'users' %}users/">Users</a> |
+        <a href="{% url 'menu-items' %}menuitems/">Menu Items</a> |
+        <a href="{% url 'categories' %}categories/">Categories</a>
+    </div>
+    <br>
+{% endblock %}

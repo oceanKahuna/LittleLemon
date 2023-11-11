@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your API Token</h2>
+<input id="token" type="text" value="{{ token }}" readonly>
+<button onclick="copyToken()">Copy</button>
+
+<script>
+    function copyToken() {
+        var copyText = document.getElementById("token");
+        copyText.select();
+        document.execCommand("copy");
+    }
+</script>
+{% endblock %}
